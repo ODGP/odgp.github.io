@@ -16,9 +16,10 @@
 title: odgp.github.io
 email: ecws15@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Soy Oliver Garcia y este es mi blog personal de mi vida como dise&#241;ador/desarrollador web 
+en el presento de manera escrita el proceso de desarrollo de cada uno de los proyectos que eh desarrollado 
+a lo largo del tiempo. Muestro tambien datos interesantes sobre algunas herramientas de desarrollo
+o dise&#241;o por los cuales puedes guiarte y aprender de mis logros y errores.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: OliverGaDaPe
