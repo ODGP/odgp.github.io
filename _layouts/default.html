@@ -15,7 +15,7 @@
 <script type="application/ld+json">
 {"description":"Soy Oliver Garcia y este es mi blog personal de mi vida como diseñador/desarrollador web en el presento de manera escrita el proceso de desarrollo de cada uno de los proyectos que eh desarrollado a lo largo del tiempo. Muestro tambien datos interesantes sobre algunas herramientas de desarrollo o diseño por los cuales puedes guiarte y aprender de mis logros y errores.","@type":"WebSite","url":"http://localhost:4000/","name":"odgp.github.io","headline":"odgp.github.io","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="../assets/main.css">
+<link rel="stylesheet" href="/assets/main.css">
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="odgp.github.io" />
 <link rel="stylesheet" href="/css/style.css"></head>
 
@@ -37,7 +37,7 @@
             href="/">Home</a>
             <a {% if page.url == "/about/" %}class="page-link active"{%endif%}
             {% if page.url != "/about/" %}class="page-link"{%endif%}
-            href="/about/">Sobri mi</a>
+            href="/about/">Sobre mi</a>
             </div>
       </nav></div>
 </header>
@@ -50,7 +50,28 @@
     </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
+  {% if page.comments %}
+  <div id="disqus_thread"></div>
+<script>
 
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://odgp-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {% endif %}
   <div class="wrapper">
 
     <h2 class="footer-heading">odgp.github.io</h2>
@@ -72,6 +93,7 @@
   </div>
 
 </footer>
+<script id="dsq-count-scr" src="//odgp-github-io.disqus.com/count.js" async></script>
 </body>
 
 </html>
